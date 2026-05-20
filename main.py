@@ -1,16 +1,20 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+import matplotlib.pyplot as plt
+import numpy as np
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def main():
+    rng = np.random.default_rng(seed=42)
+    x = rng.normal(loc=10, scale=2, size=20)
+    y = 2.5 * x + rng.normal(loc=0, scale=3, size=20)
+
+    plt.scatter(x, y, color="royalblue", edgecolor="black")
+    plt.title("Synthetic Scatter Plot")
+    plt.xlabel("Feature X")
+    plt.ylabel("Feature Y")
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.show()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
