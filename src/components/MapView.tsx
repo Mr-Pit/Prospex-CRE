@@ -73,7 +73,7 @@ function MapView({
             }
 
             layer.bindTooltip(
-              `<strong>${tract.tractName}</strong><br/>${tract.countyName}<br/>Prospex: ${formatScore(
+              `<strong>${tract.tractName}</strong><br/>${tract.countyName}<br/>Prospex Suitability Score: ${formatScore(
                 tract.prospexScore,
               )}`,
               { sticky: true, direction: "top" },

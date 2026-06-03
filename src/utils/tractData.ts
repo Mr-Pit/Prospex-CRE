@@ -17,9 +17,14 @@ export type FeatureCollection = {
   features: TractFeature[];
 };
 
+export type ShapDriver = {
+  name: string;
+  value?: number;
+};
+
 export type ShapExplanation = {
-  positive: string[];
-  negative: string[];
+  positive: ShapDriver[];
+  negative: ShapDriver[];
   unavailable: boolean;
 };
 
@@ -73,35 +78,29 @@ const GEOID_FIELDS = ["GEOID", "geoid", "tract_geoid"];
 // SHAP parsing is intentionally centralized here. Update these candidate field
 // names if the model export changes its explanation schema.
 const POSITIVE_DRIVER_FIELDS = [
-  "top_positive_driver_1",
-  "top_positive_driver_2",
-  "top_positive_driver_3",
-  "positive_driver_1",
-  "positive_driver_2",
-  "positive_driver_3",
-  "top_shap_positive_1",
-  "top_shap_positive_2",
-  "top_shap_positive_3",
-  "shap_positive_1",
-  "shap_positive_2",
-  "shap_positive_3",
+  ["top_positive_driver_1", "positive_driver_1", "shap_positive_1"],
+  ["top_positive_driver_2", "positive_driver_2", "shap_positive_2"],
+  ["top_positive_driver_3", "positive_driver_3", "shap_positive_3"],
 ];
 
 // SHAP parsing is intentionally centralized here. Update these candidate field
 // names if the model export changes its explanation schema.
 const NEGATIVE_DRIVER_FIELDS = [
-  "top_negative_driver_1",
-  "top_negative_driver_2",
-  "top_negative_driver_3",
-  "negative_driver_1",
-  "negative_driver_2",
-  "negative_driver_3",
-  "top_shap_negative_1",
-  "top_shap_negative_2",
-  "top_shap_negative_3",
-  "shap_negative_1",
-  "shap_negative_2",
-  "shap_negative_3",
+  ["top_negative_driver_1", "negative_driver_1", "shap_negative_1"],
+  ["top_negative_driver_2", "negative_driver_2", "shap_negative_2"],
+  ["top_negative_driver_3", "negative_driver_3", "shap_negative_3"],
+];
+
+const POSITIVE_VALUE_FIELDS = [
+  ["top_positive_value_1", "positive_value_1", "shap_positive_value_1"],
+  ["top_positive_value_2", "positive_value_2", "shap_positive_value_2"],
+  ["top_positive_value_3", "positive_value_3", "shap_positive_value_3"],
+];
+
+const NEGATIVE_VALUE_FIELDS = [
+  ["top_negative_value_1", "negative_value_1", "shap_negative_value_1"],
+  ["top_negative_value_2", "negative_value_2", "shap_negative_value_2"],
+  ["top_negative_value_3", "negative_value_3", "shap_negative_value_3"],
 ];
 
 export async function loadTractData(): Promise<TractRecord[]> {
@@ -146,6 +145,40 @@ export function getTopTracts(
     .slice(0, limit);
 }
 
+export function getProspexScore(feature: TractFeature): number | null {
+  return readNumber(feature.properties ?? {}, SCORE_FIELDS);
+}
+
+export function getGisBaselineScore(feature: TractFeature): number | null {
+  return readNumber(feature.properties ?? {}, GIS_SCORE_FIELDS);
+}
+
+export function getRecentConstructionRate(feature: TractFeature): number | null {
+  return readNumber(feature.properties ?? {}, RECENT_CONSTRUCTION_FIELDS);
+}
+
+export function getPositiveShapDrivers(feature: TractFeature): ShapDriver[] {
+  return readShapDrivers(
+    feature.properties ?? {},
+    POSITIVE_DRIVER_FIELDS,
+    POSITIVE_VALUE_FIELDS,
+  );
+}
+
+export function getNegativeShapDrivers(feature: TractFeature): ShapDriver[] {
+  return readShapDrivers(
+    feature.properties ?? {},
+    NEGATIVE_DRIVER_FIELDS,
+    NEGATIVE_VALUE_FIELDS,
+  );
+}
+
+export function getPrimaryPositiveShapDriver(
+  feature: TractFeature,
+): ShapDriver | null {
+  return getPositiveShapDrivers(feature)[0] ?? null;
+}
+
 export function formatScore(score: number | null): string {
   return score === null ? "Unavailable" : `${Math.round(score)}`;
 }
@@ -183,15 +216,16 @@ function normalizeFeature(feature: TractFeature, index: number): TractRecord {
   const id = `${geoid}-${index}`;
   const countyName = cleanCountyName(readString(properties, COUNTY_FIELDS));
   const tractName = readString(properties, TRACT_NAME_FIELDS) ?? geoid;
-  const prospexScore = readNumber(properties, SCORE_FIELDS);
-  const gisScore = readNumber(properties, GIS_SCORE_FIELDS);
-  const recentConstructionRate = readNumber(properties, RECENT_CONSTRUCTION_FIELDS);
-  const shap = extractShapExplanation(properties);
   const normalizedFeature = {
     ...feature,
     id,
     properties,
   };
+  const prospexScore = getProspexScore(normalizedFeature);
+  const gisScore = getGisBaselineScore(normalizedFeature);
+  const recentConstructionRate = getRecentConstructionRate(normalizedFeature);
+  const positive = getPositiveShapDrivers(normalizedFeature);
+  const negative = getNegativeShapDrivers(normalizedFeature);
 
   return {
     id,
@@ -204,30 +238,30 @@ function normalizeFeature(feature: TractFeature, index: number): TractRecord {
     prospexScore,
     gisScore,
     recentConstructionRate,
-    shap,
+    shap: {
+      positive,
+      negative,
+      unavailable: positive.length === 0 && negative.length === 0,
+    },
   };
 }
 
-function extractShapExplanation(
+function readShapDrivers(
   properties: Record<string, unknown>,
-): ShapExplanation {
-  const positive = readDriverFields(properties, POSITIVE_DRIVER_FIELDS);
-  const negative = readDriverFields(properties, NEGATIVE_DRIVER_FIELDS);
+  driverFields: string[][],
+  valueFields: string[][],
+): ShapDriver[] {
+  return [0, 1, 2]
+    .map((index) => {
+      const name = readString(properties, driverFields[index]);
+      if (!name) {
+        return null;
+      }
 
-  return {
-    positive,
-    negative,
-    unavailable: positive.length === 0 && negative.length === 0,
-  };
-}
-
-function readDriverFields(
-  properties: Record<string, unknown>,
-  fields: string[],
-): string[] {
-  return fields
-    .map((field) => readString(properties, [field]))
-    .filter((value): value is string => Boolean(value));
+      const value = readNumber(properties, valueFields[index]);
+      return value === null ? { name } : { name, value };
+    })
+    .filter((driver): driver is ShapDriver => driver !== null);
 }
 
 function readString(

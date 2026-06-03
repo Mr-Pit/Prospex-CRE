@@ -116,6 +116,51 @@ select {
   margin-bottom: 20px;
 }
 
+.sidebar-tabs {
+  margin-top: 8px;
+}
+
+.tab-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 16px;
+  padding: 5px;
+  background: #0d151b;
+  border: 1px solid #263840;
+  border-radius: 8px;
+}
+
+.tab-list button {
+  min-height: 40px;
+  padding: 9px 10px;
+  color: #9fb7b3;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.tab-list button:hover {
+  color: #f7faf9;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-list button.active {
+  color: #10232a;
+  background: #dcefed;
+  border-color: #a7d3cb;
+  box-shadow: 0 6px 20px rgba(63, 176, 153, 0.18);
+}
+
+.tab-panel .info-card,
+.tab-panel .status-card,
+.tab-panel .sidebar-section {
+  margin-bottom: 0;
+}
+
 .field-label {
   display: block;
   margin-bottom: 8px;
@@ -293,7 +338,7 @@ select:focus {
 
 .top-tracts-list button {
   display: grid;
-  grid-template-columns: 34px minmax(0, 1fr) 52px;
+  grid-template-columns: 34px minmax(0, 1fr) 70px;
   gap: 12px;
   align-items: center;
   width: 100%;
@@ -358,6 +403,18 @@ select:focus {
   color: #123039;
   font-size: 24px;
   font-weight: 900;
+  line-height: 1;
+  text-align: right;
+}
+
+.list-score small {
+  display: block;
+  margin-bottom: 4px;
+  color: #697a80;
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .score-legend {

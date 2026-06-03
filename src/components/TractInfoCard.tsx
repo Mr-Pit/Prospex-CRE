@@ -1,4 +1,9 @@
-import { TractRecord, formatMetric, formatScore } from "../utils/tractData";
+import {
+  ShapDriver,
+  TractRecord,
+  formatMetric,
+  formatScore,
+} from "../utils/tractData";
 
 type TractInfoCardProps = {
   tract: TractRecord | null;
@@ -11,8 +16,9 @@ function TractInfoCard({ tract }: TractInfoCardProps) {
         <p className="eyebrow">Model Explanation</p>
         <h2>Hover a census tract</h2>
         <p>
-          Move across the map or choose a top-ranked tract to inspect the score,
-          GIS baseline, recent development signal, and SHAP drivers.
+          Move across the map or choose a top-ranked tract to inspect the Prospex
+          Suitability Score, GIS baseline, recent development signal, and SHAP
+          drivers.
         </p>
       </section>
     );
@@ -25,7 +31,7 @@ function TractInfoCard({ tract }: TractInfoCardProps) {
       <p className="geoid">GEOID {tract.geoid}</p>
 
       <div className="score-block">
-        <span>Prospex suitability</span>
+        <span>Prospex Suitability Score</span>
         <strong>{formatScore(tract.prospexScore)}</strong>
       </div>
 
@@ -40,25 +46,27 @@ function TractInfoCard({ tract }: TractInfoCardProps) {
         </div>
       </div>
 
-      <div className="driver-block">
-        <h3>Top positive SHAP drivers</h3>
-        <DriverList drivers={tract.shap.positive} />
-      </div>
-
-      <div className="driver-block">
-        <h3>Top negative SHAP drivers</h3>
-        <DriverList drivers={tract.shap.negative} />
-      </div>
-
-      {tract.shap.unavailable && (
+      {tract.shap.unavailable ? (
         <p className="shap-unavailable">SHAP explanation unavailable</p>
+      ) : (
+        <>
+          <div className="driver-block">
+            <h3>Top Positive SHAP Drivers</h3>
+            <DriverList drivers={tract.shap.positive} />
+          </div>
+
+          <div className="driver-block">
+            <h3>Top Negative SHAP Drivers</h3>
+            <DriverList drivers={tract.shap.negative} />
+          </div>
+        </>
       )}
     </section>
   );
 }
 
 type DriverListProps = {
-  drivers: string[];
+  drivers: ShapDriver[];
 };
 
 function DriverList({ drivers }: DriverListProps) {
@@ -69,10 +77,21 @@ function DriverList({ drivers }: DriverListProps) {
   return (
     <ol className="driver-list">
       {drivers.slice(0, 3).map((driver) => (
-        <li key={driver}>{driver}</li>
+        <li key={`${driver.name}-${driver.value ?? "no-value"}`}>
+          {formatShapDriver(driver)}
+        </li>
       ))}
     </ol>
   );
+}
+
+function formatShapDriver(driver: ShapDriver): string {
+  if (driver.value === undefined) {
+    return driver.name;
+  }
+
+  const sign = driver.value >= 0 ? "+" : "";
+  return `${driver.name} (${sign}${driver.value.toFixed(3)})`;
 }
 
 export default TractInfoCard;

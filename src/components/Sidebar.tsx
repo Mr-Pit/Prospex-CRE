@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TopTractsList from "./TopTractsList";
 import TractInfoCard from "./TractInfoCard";
 import { CountyFilter, TractRecord, countyLabel } from "../utils/tractData";
@@ -14,6 +15,7 @@ type SidebarProps = {
 };
 
 const COUNTY_OPTIONS: CountyFilter[] = ["all", "miami-dade", "broward", "palm-beach"];
+type SidebarTab = "selected" | "top";
 
 function Sidebar({
   selectedCounty,
@@ -25,6 +27,13 @@ function Sidebar({
   isLoading,
   error,
 }: SidebarProps) {
+  const [activeTab, setActiveTab] = useState<SidebarTab>("selected");
+
+  const handleSelectTopTract = (tract: TractRecord) => {
+    onSelectTract(tract);
+    setActiveTab("selected");
+  };
+
   return (
     <aside className="sidebar">
       <section className="sidebar-section">
@@ -47,18 +56,45 @@ function Sidebar({
       {isLoading && <div className="status-card">Loading tract intelligence...</div>}
       {error && <div className="status-card error">{error}</div>}
 
-      <TractInfoCard tract={activeTract} />
-
-      <section className="sidebar-section">
-        <div className="section-heading">
-          <p className="eyebrow">Ranked by Prospex score</p>
-          <h2>Top 10 Tracts</h2>
+      <section className="sidebar-tabs" aria-label="Prospex tract panels">
+        <div className="tab-list" role="tablist" aria-label="Right panel views">
+          <button
+            className={activeTab === "selected" ? "active" : ""}
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "selected"}
+            onClick={() => setActiveTab("selected")}
+          >
+            Selected Tract
+          </button>
+          <button
+            className={activeTab === "top" ? "active" : ""}
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "top"}
+            onClick={() => setActiveTab("top")}
+          >
+            Top 10 Tracts
+          </button>
         </div>
-        <TopTractsList
-          tracts={topTracts}
-          selectedTract={selectedTract}
-          onSelectTract={onSelectTract}
-        />
+
+        <div className="tab-panel" role="tabpanel">
+          {activeTab === "selected" ? (
+            <TractInfoCard tract={activeTract} />
+          ) : (
+            <section className="sidebar-section">
+              <div className="section-heading">
+                <p className="eyebrow">Ranked by Prospex Suitability Score</p>
+                <h2>Top 10 Tracts</h2>
+              </div>
+              <TopTractsList
+                tracts={topTracts}
+                selectedTract={selectedTract}
+                onSelectTract={handleSelectTopTract}
+              />
+            </section>
+          )}
+        </div>
       </section>
     </aside>
   );

@@ -1,4 +1,9 @@
-import { TractRecord, formatScore } from "../utils/tractData";
+import {
+  ShapDriver,
+  TractRecord,
+  formatScore,
+  getPrimaryPositiveShapDriver,
+} from "../utils/tractData";
 
 type TopTractsListProps = {
   tracts: TractRecord[];
@@ -29,14 +34,34 @@ function TopTractsList({ tracts, selectedTract, onSelectTract }: TopTractsListPr
             <span className="tract-summary">
               <strong>{tract.tractName}</strong>
               <small>{tract.countyName}</small>
-              <em>{tract.shap.positive[0] ?? "Primary SHAP driver unavailable"}</em>
+              <em>
+                {formatPrimaryDriver(
+                  getPrimaryPositiveShapDriver(tract.feature),
+                )}
+              </em>
             </span>
-            <span className="list-score">{formatScore(tract.prospexScore)}</span>
+            <span className="list-score" aria-label="Prospex Suitability Score">
+              <small>Prospex Suitability Score</small>
+              {formatScore(tract.prospexScore)}
+            </span>
           </button>
         </li>
       ))}
     </ol>
   );
+}
+
+function formatPrimaryDriver(driver: ShapDriver | null): string {
+  if (!driver) {
+    return "Primary SHAP driver unavailable";
+  }
+
+  if (driver.value === undefined) {
+    return driver.name;
+  }
+
+  const sign = driver.value >= 0 ? "+" : "";
+  return `${driver.name} (${sign}${driver.value.toFixed(3)})`;
 }
 
 export default TopTractsList;
