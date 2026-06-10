@@ -27,7 +27,7 @@ npm run build
 Place the GeoJSON file here:
 
 ```text
-public/data/prospex_cre_v1_tract_scores.geojson
+public/data/prospex_cre_tract_scores.geojson
 ```
 
 The application loads the file directly from the public folder. No backend is required for V1.
@@ -60,7 +60,7 @@ If SHAP fields are missing, the tract info card and top tract list display fallb
 
 ## Local Workflow
 
-1. Add `prospex_cre_v1_tract_scores.geojson` to `public/data`.
+1. Add `prospex_cre_tract_scores.geojson` to `public/data`.
 2. Run `npm install`.
 3. Run `npm run dev`.
 4. Open the Vite URL shown in the terminal.

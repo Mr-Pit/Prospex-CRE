@@ -42,7 +42,10 @@ export type TractRecord = {
   shap: ShapExplanation;
 };
 
-const DATA_URL = "/data/prospex_cre_v1_tract_scores.geojson";
+const GEOJSON_URL = "/data/prospex_cre_tract_scores.geojson";
+// Backward compatibility only: older local checkouts may still have the
+// versioned V1 export before the standardized runtime filename was adopted.
+const LEGACY_GEOJSON_URL = "/data/prospex_cre_v1_tract_scores.geojson";
 
 const COUNTY_ALIASES: Record<Exclude<CountyFilter, "all">, string[]> = {
   "miami-dade": ["miami dade", "miami-dade"],
@@ -104,13 +107,9 @@ const NEGATIVE_VALUE_FIELDS = [
 ];
 
 export async function loadTractData(): Promise<TractRecord[]> {
-  const response = await fetch(DATA_URL);
+  const response = await fetchGeoJson();
 
-  const missingFileMessage = `Could not load ${DATA_URL}. Add prospex_cre_v1_tract_scores.geojson to public/data.`;
-
-  if (!response.ok) {
-    throw new Error(missingFileMessage);
-  }
+  const missingFileMessage = `Could not load ${GEOJSON_URL}. Add prospex_cre_tract_scores.geojson to public/data.`;
 
   const contentType = response.headers.get("content-type") ?? "";
   if (!contentType.includes("json")) {
@@ -122,7 +121,7 @@ export async function loadTractData(): Promise<TractRecord[]> {
     geojson = (await response.json()) as Partial<FeatureCollection>;
   } catch {
     throw new Error(
-      `Could not parse ${DATA_URL}. Confirm the file is valid GeoJSON.`,
+      `Could not parse ${GEOJSON_URL}. Confirm the file is valid GeoJSON.`,
     );
   }
 
@@ -131,6 +130,25 @@ export async function loadTractData(): Promise<TractRecord[]> {
   return features
     .filter((feature): feature is TractFeature => feature?.type === "Feature")
     .map(normalizeFeature);
+}
+
+async function fetchGeoJson(): Promise<Response> {
+  const primary = await fetch(GEOJSON_URL);
+  if (isGeoJsonResponse(primary)) {
+    return primary;
+  }
+
+  const legacy = await fetch(LEGACY_GEOJSON_URL);
+  if (isGeoJsonResponse(legacy)) {
+    return legacy;
+  }
+
+  return primary;
+}
+
+function isGeoJsonResponse(response: Response): boolean {
+  const contentType = response.headers.get("content-type") ?? "";
+  return response.ok && contentType.includes("json");
 }
 
 export function getTopTracts(
