@@ -59,11 +59,11 @@ function MapView({
             const isSelected = tract?.id === selectedTract?.id;
 
             return {
-              color: isHovered || isSelected ? "#101820" : "#ffffff",
+              color: isHovered || isSelected ? "#000000" : "#111827",
               fillColor: scoreColor(tract?.prospexScore ?? null),
-              fillOpacity: isHovered || isSelected ? 0.88 : 0.68,
-              opacity: isHovered || isSelected ? 1 : 0.75,
-              weight: isHovered || isSelected ? 2.2 : 0.7,
+              fillOpacity: isHovered || isSelected ? 0.85 : 0.72,
+              opacity: isHovered || isSelected ? 1 : 0.65,
+              weight: isHovered || isSelected ? 2 : 0.6,
             };
           }}
           onEachFeature={(feature, layer) => {

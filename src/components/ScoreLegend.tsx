@@ -1,14 +1,14 @@
 export const SCORE_RANGES = [
-  { label: "0 to 20", min: 0, max: 20, color: "#f3f4f0" },
-  { label: "20 to 40", min: 20, max: 40, color: "#c9e6c4" },
-  { label: "40 to 60", min: 40, max: 60, color: "#7bc89c" },
-  { label: "60 to 80", min: 60, max: 80, color: "#1f9a8a" },
-  { label: "80 to 100", min: 80, max: 100, color: "#0b4f6c" },
+  { label: "0 to 20", min: 0, max: 20, color: "#b2182b" },
+  { label: "20 to 40", min: 20, max: 40, color: "#ef8a62" },
+  { label: "40 to 60", min: 40, max: 60, color: "#f7f7f7" },
+  { label: "60 to 80", min: 60, max: 80, color: "#67a9cf" },
+  { label: "80 to 100", min: 80, max: 100, color: "#2166ac" },
 ];
 
 export function scoreColor(score: number | null): string {
   if (score === null) {
-    return "#a8adb4";
+    return "#9ca3af";
   }
 
   if (score >= 80) return SCORE_RANGES[4].color;
@@ -20,8 +20,8 @@ export function scoreColor(score: number | null): string {
 
 function ScoreLegend() {
   return (
-    <div className="score-legend" aria-label="Suitability score legend">
-      <h2>Suitability Score</h2>
+    <div className="score-legend" aria-label="Prospex Suitability Score legend">
+      <h2>Prospex Suitability Score</h2>
       {SCORE_RANGES.map((range) => (
         <div className="legend-row" key={range.label}>
           <span style={{ backgroundColor: range.color }} />
