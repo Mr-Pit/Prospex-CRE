@@ -1,6 +1,12 @@
 import { useEffect, useMemo } from "react";
 import L from "leaflet";
-import { GeoJSON, MapContainer, TileLayer, useMap } from "react-leaflet";
+import {
+  GeoJSON,
+  MapContainer,
+  TileLayer,
+  ZoomControl,
+  useMap,
+} from "react-leaflet";
 import ScoreLegend, { scoreColor } from "./ScoreLegend";
 import { CountyFilter, FeatureCollection, TractRecord, formatScore } from "../utils/tractData";
 
@@ -42,8 +48,10 @@ function MapView({
       className="prospex-map"
       center={DEFAULT_CENTER}
       zoom={DEFAULT_ZOOM}
+      zoomControl={false}
       scrollWheelZoom
     >
+      <ZoomControl position="bottomleft" />
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

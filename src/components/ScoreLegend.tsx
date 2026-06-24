@@ -3,7 +3,7 @@ export const SCORE_RANGES = [
   { label: "20 to 40", min: 20, max: 40, color: "#ef8a62" },
   { label: "40 to 60", min: 40, max: 60, color: "#f7f7f7" },
   { label: "60 to 80", min: 60, max: 80, color: "#67a9cf" },
-  { label: "80 to 100", min: 80, max: 100, color: "#2166ac" },
+  { label: "80 to 100", min: 80, max: 100, color: "#08306b" },
 ];
 
 export function scoreColor(score: number | null): string {

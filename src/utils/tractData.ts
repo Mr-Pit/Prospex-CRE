@@ -80,6 +80,10 @@ const COUNTY_FIELDS = ["county_name", "county", "COUNTY", "countyName"];
 const TRACT_NAME_FIELDS = ["NAMELSAD", "tract_name", "tract", "name", "NAME"];
 const GEOID_FIELDS = ["GEOID", "geoid", "tract_geoid"];
 
+const DISPLAY_LABEL_OVERRIDES: Record<string, string> = {
+  "Commercial Land Use Proxy": "Commercial Land Use Index",
+};
+
 // SHAP parsing is intentionally centralized here. Update these candidate field
 // names if the model export changes its explanation schema.
 const POSITIVE_DRIVER_FIELDS = [
@@ -350,9 +354,16 @@ function readShapDrivers(
       }
 
       const value = readNumber(properties, valueFields[index]);
-      return value === null ? { name } : { name, value };
+      const displayName = displayLabel(name);
+      return value === null
+        ? { name: displayName }
+        : { name: displayName, value };
     })
     .filter((driver): driver is ShapDriver => driver !== null);
+}
+
+function displayLabel(label: string): string {
+  return DISPLAY_LABEL_OVERRIDES[label] ?? label;
 }
 
 function readString(
