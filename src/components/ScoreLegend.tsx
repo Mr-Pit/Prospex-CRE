@@ -21,7 +21,7 @@ export function scoreColor(score: number | null): string {
 function ScoreLegend() {
   return (
     <div className="score-legend" aria-label="Prospex Suitability Score legend">
-      <h2>Prospex Suitability Score</h2>
+      <h2>Prospex Suitability Score Percentile</h2>
       {SCORE_RANGES.map((range) => (
         <div className="legend-row" key={range.label}>
           <span style={{ backgroundColor: range.color }} />

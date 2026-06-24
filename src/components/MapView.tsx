@@ -60,7 +60,7 @@ function MapView({
 
             return {
               color: isHovered || isSelected ? "#000000" : "#111827",
-              fillColor: scoreColor(tract?.prospexScore ?? null),
+              fillColor: scoreColor(tract?.displayProspexScore ?? null),
               fillOpacity: isHovered || isSelected ? 0.85 : 0.72,
               opacity: isHovered || isSelected ? 1 : 0.65,
               weight: isHovered || isSelected ? 2 : 0.6,
@@ -74,7 +74,7 @@ function MapView({
 
             layer.bindTooltip(
               `<strong>${tract.tractName}</strong><br/>${tract.countyName}<br/>Prospex Suitability Score: ${formatScore(
-                tract.prospexScore,
+                tract.displayProspexScore,
               )}`,
               { sticky: true, direction: "top" },
             );

@@ -32,8 +32,9 @@ function TractInfoCard({ tract }: TractInfoCardProps) {
 
       <div className="score-block">
         <span>Prospex Suitability Score</span>
-        <strong>{formatScore(tract.prospexScore)}</strong>
+        <strong>{formatScore(tract.displayProspexScore)}</strong>
       </div>
+      <p className="score-helper">Percentile rank among scored census tracts</p>
 
       <div className="metric-grid">
         <div>

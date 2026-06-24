@@ -42,7 +42,7 @@ function TopTractsList({ tracts, selectedTract, onSelectTract }: TopTractsListPr
             </span>
             <span className="list-score" aria-label="Prospex Suitability Score">
               <small>Prospex Suitability Score</small>
-              {formatScore(tract.prospexScore)}
+              {formatScore(tract.displayProspexScore)}
             </span>
           </button>
         </li>

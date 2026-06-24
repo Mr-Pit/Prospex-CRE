@@ -36,7 +36,9 @@ export type TractRecord = {
   countyName: string;
   countyKey: CountyFilter;
   tractName: string;
+  rawProspexScore: number | null;
   prospexScore: number | null;
+  displayProspexScore: number | null;
   gisScore: number | null;
   recentConstructionRate: number | null;
   shap: ShapExplanation;
@@ -127,9 +129,11 @@ export async function loadTractData(): Promise<TractRecord[]> {
 
   const features = Array.isArray(geojson.features) ? geojson.features : [];
 
-  return features
+  const normalizedTracts = features
     .filter((feature): feature is TractFeature => feature?.type === "Feature")
     .map(normalizeFeature);
+
+  return applyProspexPercentiles(normalizedTracts);
 }
 
 async function fetchGeoJson(): Promise<Response> {
@@ -158,8 +162,12 @@ export function getTopTracts(
 ): TractRecord[] {
   return tracts
     .filter((tract) => county === "all" || tract.countyKey === county)
-    .filter((tract) => tract.prospexScore !== null)
-    .sort((a, b) => (b.prospexScore ?? -Infinity) - (a.prospexScore ?? -Infinity))
+    .filter((tract) => tract.displayProspexScore !== null)
+    .sort(
+      (a, b) =>
+        (b.displayProspexScore ?? -Infinity) -
+        (a.displayProspexScore ?? -Infinity),
+    )
     .slice(0, limit);
 }
 
@@ -239,7 +247,7 @@ function normalizeFeature(feature: TractFeature, index: number): TractRecord {
     id,
     properties,
   };
-  const prospexScore = getProspexScore(normalizedFeature);
+  const rawProspexScore = getProspexScore(normalizedFeature);
   const gisScore = getGisBaselineScore(normalizedFeature);
   const recentConstructionRate = getRecentConstructionRate(normalizedFeature);
   const positive = getPositiveShapDrivers(normalizedFeature);
@@ -253,7 +261,9 @@ function normalizeFeature(feature: TractFeature, index: number): TractRecord {
     countyName,
     countyKey: normalizeCountyKey(countyName),
     tractName,
-    prospexScore,
+    rawProspexScore,
+    prospexScore: rawProspexScore,
+    displayProspexScore: null,
     gisScore,
     recentConstructionRate,
     shap: {
@@ -262,6 +272,69 @@ function normalizeFeature(feature: TractFeature, index: number): TractRecord {
       unavailable: positive.length === 0 && negative.length === 0,
     },
   };
+}
+
+function applyProspexPercentiles(tracts: TractRecord[]): TractRecord[] {
+  const scoredTracts = tracts
+    .filter((tract) => isValidScore(tract.rawProspexScore))
+    .sort((a, b) => (a.rawProspexScore ?? 0) - (b.rawProspexScore ?? 0));
+
+  if (scoredTracts.length === 0) {
+    return tracts;
+  }
+
+  if (scoredTracts.length === 1) {
+    const [onlyScoredTract] = scoredTracts;
+    return tracts.map((tract) =>
+      tract.id === onlyScoredTract.id
+        ? {
+            ...tract,
+            prospexScore: tract.rawProspexScore,
+            displayProspexScore: tract.rawProspexScore,
+          }
+        : tract,
+    );
+  }
+
+  const percentileById = new Map<string, number>();
+  const maxRankIndex = scoredTracts.length - 1;
+
+  // Raw model output can be highly skewed, so percentile scoring improves
+  // interpretability by showing each tract's relative rank among candidates.
+  for (let index = 0; index < scoredTracts.length; ) {
+    const score = scoredTracts[index].rawProspexScore;
+    let endIndex = index;
+
+    while (
+      endIndex + 1 < scoredTracts.length &&
+      scoredTracts[endIndex + 1].rawProspexScore === score
+    ) {
+      endIndex += 1;
+    }
+
+    const averageRankIndex = (index + endIndex) / 2;
+    const percentile = (averageRankIndex / maxRankIndex) * 100;
+
+    for (let tiedIndex = index; tiedIndex <= endIndex; tiedIndex += 1) {
+      percentileById.set(scoredTracts[tiedIndex].id, percentile);
+    }
+
+    index = endIndex + 1;
+  }
+
+  return tracts.map((tract) => {
+    const displayProspexScore = percentileById.get(tract.id) ?? null;
+
+    return {
+      ...tract,
+      prospexScore: displayProspexScore,
+      displayProspexScore,
+    };
+  });
+}
+
+function isValidScore(score: number | null): score is number {
+  return typeof score === "number" && Number.isFinite(score);
 }
 
 function readShapDrivers(

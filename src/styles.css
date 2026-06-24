@@ -253,6 +253,13 @@ select:focus {
   line-height: 1;
 }
 
+.score-helper {
+  margin: -8px 0 18px;
+  color: #62737a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
