@@ -1,0 +1,426 @@
+{"kind":"deck","id":"pr/4y4x9i","name":"Deck"}
+{"kind":"layout","layoutId":"edd09423-acad-4f7b-8bb1-04c7987a003a","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"056a7b67-caf8-4339-9319-d4d7784a0204","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/vsizv3","slide":1,"title":"Prospex CRE","textShapes":6}
+{"kind":"textbox","id":"sh/bat47y1k","slide":1,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,23,650,44]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":1,"text":"Beyond Traditional GIS Suitability Modeling","textPreview":"Beyond Traditional GIS Suitability Modeling","textChars":43,"textLines":1,"bbox":[30,66,760,34]}
+{"kind":"shape","id":"sh/tgfmlkjm","slide":1,"bbox":[30,107,900,0]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":1,"bbox":[30,154,900,0]}
+{"kind":"shape","id":"sh/bm58z25k","slide":1,"bbox":[735,82.88,104.96,19.2]}
+{"kind":"shape","id":"sh/47y1kre1","slide":1,"bbox":[819.48,24,19.2,79.36]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":1,"bbox":[781.08,41.92,58.88,58.88]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":1,"text":"A machine learning framework for commercial real estate development site selection","textPreview":"A machine learning framework for commercial real estate development site selection","textChars":82,"textLines":1,"bbox":[30,405,595,42]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":1,"text":"GIS + ML + SHAP + interactive decision support","textPreview":"GIS + ML + SHAP + interactive decision support","textChars":46,"textLines":1,"bbox":[30,456,520,18]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":1,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":1,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/vsizv3","slide":1,"text":""}
+{"kind":"slide","id":"sl/wlwloy","slide":2,"title":"Contents","textShapes":13}
+{"kind":"textbox","id":"sh/u9knih4b","slide":2,"text":"Contents","textPreview":"Contents","textChars":8,"textLines":1,"bbox":[30,24,360,24]}
+{"kind":"shape","id":"sh/1032lszq","slide":2,"bbox":[30,128,900,0]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":2,"bbox":[42,80,24,24]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[47,84,18,14]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":2,"text":"Problem and research objectives","textPreview":"Problem and research objectives","textChars":31,"textLines":1,"bbox":[88,78,610,30]}
+{"kind":"shape","id":"sh/1orytsvu","slide":2,"bbox":[30,206,900,0]}
+{"kind":"shape","id":"sh/c7u54zid","slide":2,"bbox":[42,158,24,24]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[47,162,18,14]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":2,"text":"Study area, data, and feature engineering","textPreview":"Study area, data, and feature engineering","textChars":41,"textLines":1,"bbox":[88,156,610,30]}
+{"kind":"shape","id":"sh/orytsvu9","slide":2,"bbox":[30,284,900,0]}
+{"kind":"shape","id":"sh/hcrmhk3q","slide":2,"bbox":[42,236,24,24]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[47,240,18,14]}
+{"kind":"textbox","id":"sh/z61032ls","slide":2,"text":"Methodology and model tournament","textPreview":"Methodology and model tournament","textChars":32,"textLines":1,"bbox":[88,234,610,30]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":2,"bbox":[30,362,900,0]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":2,"bbox":[42,314,24,24]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[47,318,18,14]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":2,"text":"Results, SHAP, and Prospex CRE application","textPreview":"Results, SHAP, and Prospex CRE application","textChars":42,"textLines":1,"bbox":[88,312,610,30]}
+{"kind":"shape","id":"sh/obm58z25","slide":2,"bbox":[30,440,900,0]}
+{"kind":"shape","id":"sh/hwfyxobm","slide":2,"bbox":[42,392,24,24]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":2,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[47,396,18,14]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":2,"text":"Discussion, future work, and conclusion","textPreview":"Discussion, future work, and conclusion","textChars":39,"textLines":1,"bbox":[88,390,610,30]}
+{"kind":"shape","id":"sh/j2t83itg","slide":2,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":2,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/wlwloy","slide":2,"text":""}
+{"kind":"slide","id":"sl/wjylwm","slide":3,"title":"Traditional GIS is useful, but the weighting step limits prediction","textShapes":10}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":3,"text":"Traditional GIS is useful, but the weighting step limits prediction","textPreview":"Traditional GIS is useful, but the weighting step limits prediction","textChars":67,"textLines":1,"bbox":[30,30,620,65]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":3,"bbox":[790,79.12,59.04,10.8]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":3,"bbox":[837.52,46,10.8,44.64]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":3,"bbox":[815.92,56.08,33.12,33.12]}
+{"kind":"shape","id":"sh/itgfmlkj","slide":3,"bbox":[30,103,900,0]}
+{"kind":"shape","id":"sh/pkzupwb2","slide":3,"bbox":[486,332,444,150]}
+{"kind":"textbox","id":"sh/0z61032l","slide":3,"text":"The problem is not GIS itself; it is the assumption that complex commercial markets can be modeled with fixed linear weights.","textPreview":"The problem is not GIS itself; it is the assumption that complex commercial markets can be modeled with fixed linear weights.","textChars":125,"textLines":1,"bbox":[505,354,385,75]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":3,"bbox":[30,204,422,0]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":3,"text":"Subjectivity","textPreview":"Subjectivity","textChars":12,"textLines":1,"bbox":[30,156,92,24]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":3,"text":"Weighted overlays depend on manually assigned importance scores.","textPreview":"Weighted overlays depend on manually assigned importance scores.","textChars":64,"textLines":1,"bbox":[135,156,292,45]}
+{"kind":"shape","id":"sh/p8nqxs72","slide":3,"bbox":[30,279,422,0]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":3,"text":"Linearity","textPreview":"Linearity","textChars":9,"textLines":1,"bbox":[30,231,92,24]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":3,"text":"Commercial viability reflects interactions among income, access, employment, and existing activity.","textPreview":"Commercial viability reflects interactions among income, access, employment, and existing activity.","textChars":99,"textLines":1,"bbox":[135,231,292,45]}
+{"kind":"shape","id":"sh/0z61032l","slide":3,"bbox":[30,354,422,0]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":3,"text":"Transparency gap","textPreview":"Transparency gap","textChars":16,"textLines":1,"bbox":[30,306,92,24]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":3,"text":"High-performing models still need explanations that decision makers can trust.","textPreview":"High-performing models still need explanations that decision makers can trust.","textChars":78,"textLines":1,"bbox":[135,306,292,45]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":3,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":3,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/wjylwm","slide":3,"text":""}
+{"kind":"slide","id":"sl/0mqobm","slide":4,"title":"The research asks whether ML can improve GIS while staying explainable","textShapes":12}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":4,"text":"The research asks whether ML can improve GIS while staying explainable","textPreview":"The research asks whether ML can improve GIS while staying explainable","textChars":70,"textLines":1,"bbox":[30,30,610,52]}
+{"kind":"shape","id":"sh/j6tovaho","slide":4,"bbox":[30,118,900,0]}
+{"kind":"shape","id":"sh/ulwval87","slide":4,"bbox":[84,168,38,38]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[91,178,24,14]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":4,"text":"Improve suitability analysis","textPreview":"Improve suitability analysis","textChars":28,"textLines":1,"bbox":[36,235,142,38]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":4,"text":"Compare traditional GIS against statistical, ensemble, and spatial machine learning models.","textPreview":"Compare traditional GIS against statistical, ensemble, and spatial machine learning models.","textChars":91,"textLines":1,"bbox":[6,292,202,82]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":4,"bbox":[370,168,38,38]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[377,178,24,14]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":4,"text":"Control the experiment","textPreview":"Control the experiment","textChars":22,"textLines":1,"bbox":[322,235,142,38]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":4,"text":"Give every method the same engineered explanatory variables and evaluation data.","textPreview":"Give every method the same engineered explanatory variables and evaluation data.","textChars":80,"textLines":1,"bbox":[292,292,202,82]}
+{"kind":"shape","id":"sh/neloj2t8","slide":4,"bbox":[656,168,38,38]}
+{"kind":"textbox","id":"sh/czed8v6p","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[663,178,24,14]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":4,"text":"Keep decisions interpretable","textPreview":"Keep decisions interpretable","textChars":28,"textLines":1,"bbox":[608,235,142,38]}
+{"kind":"textbox","id":"sh/u54zidon","slide":4,"text":"Use SHAP to explain tract-level predictions and expose them in a web map.","textPreview":"Use SHAP to explain tract-level predictions and expose them in a web map.","textChars":73,"textLines":1,"bbox":[578,292,202,82]}
+{"kind":"shape","id":"sh/nqxs72x4","slide":4,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/cbulwval","slide":4,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/0mqobm","slide":4,"text":""}
+{"kind":"slide","id":"sl/xknydu","slide":5,"title":"The study area is the Miami metropolitan region","textShapes":10}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":5,"text":"The study area is the Miami metropolitan region","textPreview":"The study area is the Miami metropolitan region","textChars":47,"textLines":1,"bbox":[30,30,620,65]}
+{"kind":"shape","id":"sh/8bat47y1","slide":5,"bbox":[790,79.12,59.04,10.8]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":5,"bbox":[837.52,46,10.8,44.64]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":5,"bbox":[815.92,56.08,33.12,33.12]}
+{"kind":"shape","id":"sh/j2t83itg","slide":5,"bbox":[30,103,900,0]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":5,"bbox":[486,332,444,150]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":5,"text":"Miami-Dade, Broward, and Palm Beach Counties provide a diverse testbed with mature commercial cores, suburban corridors, and protected lands.","textPreview":"Miami-Dade, Broward, and Palm Beach Counties provide a diverse testbed with mature commercial cores, suburban corridors, and protected la...","textChars":141,"textLines":1,"bbox":[505,354,385,75]}
+{"kind":"shape","id":"sh/ulwval87","slide":5,"bbox":[30,204,422,0]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":5,"text":"Unit","textPreview":"Unit","textChars":4,"textLines":1,"bbox":[30,156,92,24]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":5,"text":"U.S. Census tracts were used as the common spatial unit.","textPreview":"U.S. Census tracts were used as the common spatial unit.","textChars":56,"textLines":1,"bbox":[135,156,292,45]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":5,"bbox":[30,279,422,0]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":5,"text":"Scale","textPreview":"Scale","textChars":5,"textLines":1,"bbox":[30,231,92,24]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":5,"text":"The final analytical dataset includes about 1,461 candidate tracts.","textPreview":"The final analytical dataset includes about 1,461 candidate tracts.","textChars":67,"textLines":1,"bbox":[135,231,292,45]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":5,"bbox":[30,354,422,0]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":5,"text":"Validation","textPreview":"Validation","textChars":10,"textLines":1,"bbox":[30,306,92,24]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":5,"text":"Predictions were checked against known commercial centers such as Brickell, Las Olas, Boca Raton, and West Palm Beach.","textPreview":"Predictions were checked against known commercial centers such as Brickell, Las Olas, Boca Raton, and West Palm Beach.","textChars":118,"textLines":1,"bbox":[135,306,292,45]}
+{"kind":"shape","id":"sh/8bat47y1","slide":5,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":5,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/xknydu","slide":5,"text":""}
+{"kind":"slide","id":"sl/jzinqb","slide":6,"title":"Public datasets make the framework reproducible","textShapes":18}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":6,"text":"Public datasets make the framework reproducible","textPreview":"Public datasets make the framework reproducible","textChars":47,"textLines":1,"bbox":[30,30,760,42]}
+{"kind":"shape","id":"sh/58z25kb6","slide":6,"bbox":[30,112,900,0]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":6,"text":"Source","textPreview":"Source","textChars":6,"textLines":1,"bbox":[38,127,239,22]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":6,"text":"Role in the model","textPreview":"Role in the model","textChars":17,"textLines":1,"bbox":[293,127,289,22]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":6,"text":"Key variables","textPreview":"Key variables","textChars":13,"textLines":1,"bbox":[598,127,324,22]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":6,"bbox":[30,160,900,0]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":6,"text":"ACS 5-Year Estimates","textPreview":"ACS 5-Year Estimates","textChars":20,"textLines":1,"bbox":[38,173,237,32]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":6,"text":"Demographic and socioeconomic base","textPreview":"Demographic and socioeconomic base","textChars":34,"textLines":1,"bbox":[293,173,287,32]}
+{"kind":"textbox","id":"sh/u54zidon","slide":6,"text":"Population, housing, income, home value, employment","textPreview":"Population, housing, income, home value, employment","textChars":51,"textLines":1,"bbox":[598,173,322,32]}
+{"kind":"shape","id":"sh/cbulwval","slide":6,"bbox":[30,214,900,0]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":6,"text":"TIGER/Line Shapefiles","textPreview":"TIGER/Line Shapefiles","textChars":21,"textLines":1,"bbox":[38,227,237,32]}
+{"kind":"textbox","id":"sh/u54zidon","slide":6,"text":"Spatial framework for joins","textPreview":"Spatial framework for joins","textChars":27,"textLines":1,"bbox":[293,227,287,32]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":6,"text":"Census tract boundaries","textPreview":"Census tract boundaries","textChars":23,"textLines":1,"bbox":[598,227,322,32]}
+{"kind":"shape","id":"sh/czed8v6p","slide":6,"bbox":[30,268,900,0]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":6,"text":"OpenStreetMap","textPreview":"OpenStreetMap","textChars":13,"textLines":1,"bbox":[38,281,237,32]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":6,"text":"Commercial activity and infrastructure","textPreview":"Commercial activity and infrastructure","textChars":38,"textLines":1,"bbox":[293,281,287,32]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":6,"text":"POIs, road network, commercial land uses","textPreview":"POIs, road network, commercial land uses","textChars":40,"textLines":1,"bbox":[598,281,322,32]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":6,"bbox":[30,322,900,0]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":6,"text":"Derived GIS layers","textPreview":"Derived GIS layers","textChars":18,"textLines":1,"bbox":[38,335,237,32]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":6,"text":"Decision-ready predictors","textPreview":"Decision-ready predictors","textChars":25,"textLines":1,"bbox":[293,335,287,32]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":6,"text":"Density, accessibility, land-use intensity","textPreview":"Density, accessibility, land-use intensity","textChars":42,"textLines":1,"bbox":[598,335,322,32]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":6,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":6,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/jzinqb","slide":6,"text":""}
+{"kind":"slide","id":"sl/igjbmf","slide":7,"title":"Feature engineering converts raw geography into commercial signals","textShapes":18}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":7,"text":"Feature engineering converts raw geography into commercial signals","textPreview":"Feature engineering converts raw geography into commercial signals","textChars":66,"textLines":1,"bbox":[30,30,760,42]}
+{"kind":"shape","id":"sh/cbulwval","slide":7,"bbox":[30,112,900,0]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":7,"text":"Feature family","textPreview":"Feature family","textChars":14,"textLines":1,"bbox":[38,127,239,22]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":7,"text":"What it captures","textPreview":"What it captures","textChars":16,"textLines":1,"bbox":[293,127,289,22]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":7,"text":"Why it matters","textPreview":"Why it matters","textChars":14,"textLines":1,"bbox":[598,127,324,22]}
+{"kind":"shape","id":"sh/czed8v6p","slide":7,"bbox":[30,160,900,0]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":7,"text":"Demand intensity","textPreview":"Demand intensity","textChars":16,"textLines":1,"bbox":[38,173,237,32]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":7,"text":"Population and housing density","textPreview":"Population and housing density","textChars":30,"textLines":1,"bbox":[293,173,287,32]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":7,"text":"Market depth and built-environment maturity","textPreview":"Market depth and built-environment maturity","textChars":43,"textLines":1,"bbox":[598,173,322,32]}
+{"kind":"shape","id":"sh/fyxobm58","slide":7,"bbox":[30,214,900,0]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":7,"text":"Economic capacity","textPreview":"Economic capacity","textChars":17,"textLines":1,"bbox":[38,227,237,32]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":7,"text":"Median income and home value","textPreview":"Median income and home value","textChars":28,"textLines":1,"bbox":[293,227,287,32]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":7,"text":"Purchasing power and market confidence","textPreview":"Purchasing power and market confidence","textChars":38,"textLines":1,"bbox":[598,227,322,32]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":7,"bbox":[30,268,900,0]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":7,"text":"Commercial activity","textPreview":"Commercial activity","textChars":19,"textLines":1,"bbox":[38,281,237,32]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":7,"text":"Commercial POI score and land-use index","textPreview":"Commercial POI score and land-use index","textChars":39,"textLines":1,"bbox":[293,281,287,32]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":7,"text":"Business clustering and infrastructure","textPreview":"Business clustering and infrastructure","textChars":38,"textLines":1,"bbox":[598,281,322,32]}
+{"kind":"shape","id":"sh/je9cvixc","slide":7,"bbox":[30,322,900,0]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":7,"text":"Access","textPreview":"Access","textChars":6,"textLines":1,"bbox":[38,335,237,32]}
+{"kind":"textbox","id":"sh/u54zidon","slide":7,"text":"Employment density and road accessibility","textPreview":"Employment density and road accessibility","textChars":41,"textLines":1,"bbox":[293,335,287,32]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":7,"text":"Daytime demand and regional connectivity","textPreview":"Daytime demand and regional connectivity","textChars":40,"textLines":1,"bbox":[598,335,322,32]}
+{"kind":"shape","id":"sh/cbulwval","slide":7,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":7,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/igjbmf","slide":7,"text":""}
+{"kind":"slide","id":"sl/93vc01","slide":8,"title":"The methodology keeps the comparison controlled","textShapes":15}
+{"kind":"textbox","id":"sh/2t83itgf","slide":8,"text":"The methodology keeps the comparison controlled","textPreview":"The methodology keeps the comparison controlled","textChars":47,"textLines":1,"bbox":[30,30,650,60]}
+{"kind":"textbox","id":"sh/9knih4by","slide":8,"text":"Step 1","textPreview":"Step 1","textChars":6,"textLines":1,"bbox":[38,132,120,24]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":8,"bbox":[38,168,112,0]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":8,"text":"Acquire public demographic, tract, road, POI, and land-use data.","textPreview":"Acquire public demographic, tract, road, POI, and land-use data.","textChars":64,"textLines":1,"bbox":[38,200,116,120]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":8,"text":"Step 2","textPreview":"Step 2","textChars":6,"textLines":1,"bbox":[186,132,120,24]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":8,"bbox":[186,168,112,0]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":8,"text":"Preprocess, spatially join, impute missing values, and standardize numeric predictors.","textPreview":"Preprocess, spatially join, impute missing values, and standardize numeric predictors.","textChars":86,"textLines":1,"bbox":[186,200,116,120]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":8,"text":"Step 3","textPreview":"Step 3","textChars":6,"textLines":1,"bbox":[334,132,120,24]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":8,"bbox":[334,168,112,0]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":8,"text":"Engineer commercial activity, land-use, density, and accessibility features.","textPreview":"Engineer commercial activity, land-use, density, and accessibility features.","textChars":76,"textLines":1,"bbox":[334,200,116,120]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":8,"text":"Step 4","textPreview":"Step 4","textChars":6,"textLines":1,"bbox":[482,132,120,24]}
+{"kind":"shape","id":"sh/ulwval87","slide":8,"bbox":[482,168,112,0]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":8,"text":"Train competing models on the same dataset and target.","textPreview":"Train competing models on the same dataset and target.","textChars":54,"textLines":1,"bbox":[482,200,116,120]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":8,"text":"Step 5","textPreview":"Step 5","textChars":6,"textLines":1,"bbox":[630,132,120,24]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":8,"bbox":[630,168,112,0]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":8,"text":"Evaluate with RMSE, MAE, R², and a composite ranking.","textPreview":"Evaluate with RMSE, MAE, R², and a composite ranking.","textChars":53,"textLines":1,"bbox":[630,200,116,120]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":8,"text":"Step 6","textPreview":"Step 6","textChars":6,"textLines":1,"bbox":[778,132,120,24]}
+{"kind":"shape","id":"sh/8bat47y1","slide":8,"bbox":[778,168,112,0]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":8,"text":"Deploy final predictions and SHAP drivers into the Prospex CRE app.","textPreview":"Deploy final predictions and SHAP drivers into the Prospex CRE app.","textChars":67,"textLines":1,"bbox":[778,200,116,120]}
+{"kind":"shape","id":"sh/1orytsvu","slide":8,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":8,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/93vc01","slide":8,"text":""}
+{"kind":"slide","id":"sl/rk8r2l","slide":9,"title":"Five approaches form the model tournament","textShapes":21}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":9,"text":"Five approaches form the model tournament","textPreview":"Five approaches form the model tournament","textChars":41,"textLines":1,"bbox":[30,30,760,42]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":9,"bbox":[30,112,900,0]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":9,"text":"Model","textPreview":"Model","textChars":5,"textLines":1,"bbox":[38,127,239,22]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":9,"text":"Purpose","textPreview":"Purpose","textChars":7,"textLines":1,"bbox":[293,127,289,22]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":9,"text":"Key limitation or strength","textPreview":"Key limitation or strength","textChars":26,"textLines":1,"bbox":[598,127,324,22]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":9,"bbox":[30,160,900,0]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":9,"text":"Traditional GIS","textPreview":"Traditional GIS","textChars":15,"textLines":1,"bbox":[38,173,237,32]}
+{"kind":"textbox","id":"sh/u54zidon","slide":9,"text":"Planning benchmark","textPreview":"Planning benchmark","textChars":18,"textLines":1,"bbox":[293,173,287,32]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":9,"text":"Transparent, but weight-driven and linear","textPreview":"Transparent, but weight-driven and linear","textChars":41,"textLines":1,"bbox":[598,173,322,32]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":9,"bbox":[30,214,900,0]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":9,"text":"OLS","textPreview":"OLS","textChars":3,"textLines":1,"bbox":[38,227,237,32]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":9,"text":"Statistical baseline","textPreview":"Statistical baseline","textChars":20,"textLines":1,"bbox":[293,227,287,32]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":9,"text":"Data-derived coefficients, but still linear","textPreview":"Data-derived coefficients, but still linear","textChars":43,"textLines":1,"bbox":[598,227,322,32]}
+{"kind":"shape","id":"sh/vahoza1g","slide":9,"bbox":[30,268,900,0]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":9,"text":"Random Forest","textPreview":"Random Forest","textChars":13,"textLines":1,"bbox":[38,281,237,32]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":9,"text":"Nonlinear ensemble","textPreview":"Nonlinear ensemble","textChars":18,"textLines":1,"bbox":[293,281,287,32]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":9,"text":"Learns interactions without manual weights","textPreview":"Learns interactions without manual weights","textChars":42,"textLines":1,"bbox":[598,281,322,32]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":9,"bbox":[30,322,900,0]}
+{"kind":"textbox","id":"sh/61032lsz","slide":9,"text":"XGBoost","textPreview":"XGBoost","textChars":7,"textLines":1,"bbox":[38,335,237,32]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":9,"text":"Boosted ensemble","textPreview":"Boosted ensemble","textChars":16,"textLines":1,"bbox":[293,335,287,32]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":9,"text":"Corrects errors sequentially with regularization","textPreview":"Corrects errors sequentially with regularization","textChars":48,"textLines":1,"bbox":[598,335,322,32]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":9,"bbox":[30,376,900,0]}
+{"kind":"textbox","id":"sh/lwval87e","slide":9,"text":"SWRF","textPreview":"SWRF","textChars":4,"textLines":1,"bbox":[38,389,237,32]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":9,"text":"Spatial ensemble","textPreview":"Spatial ensemble","textChars":16,"textLines":1,"bbox":[293,389,287,32]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":9,"text":"Adds local geographic context to Random Forest","textPreview":"Adds local geographic context to Random Forest","textChars":46,"textLines":1,"bbox":[598,389,322,32]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":9,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":9,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/rk8r2l","slide":9,"text":""}
+{"kind":"slide","id":"sl/3q2duz","slide":10,"title":"The model tournament favors spatial machine learning","textShapes":23}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":10,"text":"The model tournament favors spatial machine learning","textPreview":"The model tournament favors spatial machine learning","textChars":52,"textLines":1,"bbox":[30,30,830,50]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":10,"bbox":[30,165,900,0]}
+{"kind":"shape","id":"sh/nap4r65w","slide":10,"bbox":[50,120,45,32]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":10,"text":"#5","textPreview":"#5","textChars":2,"textLines":1,"bbox":[58,127,30,12]}
+{"kind":"textbox","id":"sh/54zidony","slide":10,"text":"Traditional GIS","textPreview":"Traditional GIS","textChars":15,"textLines":1,"bbox":[125,118,260,22]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":10,"text":"Transparent baseline","textPreview":"Transparent baseline","textChars":20,"textLines":1,"bbox":[390,120,280,20]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":10,"text":"Benchmark comparison","textPreview":"Benchmark comparison","textChars":20,"textLines":1,"bbox":[700,120,190,20]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":10,"bbox":[30,230,900,0]}
+{"kind":"shape","id":"sh/1032lszq","slide":10,"bbox":[50,185,45,32]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":10,"text":"#4","textPreview":"#4","textChars":2,"textLines":1,"bbox":[58,192,30,12]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":10,"text":"OLS","textPreview":"OLS","textChars":3,"textLines":1,"bbox":[125,183,260,22]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":10,"text":"Linear statistical baseline","textPreview":"Linear statistical baseline","textChars":27,"textLines":1,"bbox":[390,185,280,20]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":10,"text":"Benchmark comparison","textPreview":"Benchmark comparison","textChars":20,"textLines":1,"bbox":[700,185,190,20]}
+{"kind":"shape","id":"sh/1gvy90je","slide":10,"bbox":[30,295,900,0]}
+{"kind":"shape","id":"sh/8z25kb6x","slide":10,"bbox":[50,250,45,32]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":10,"text":"#3","textPreview":"#3","textChars":2,"textLines":1,"bbox":[58,257,30,12]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":10,"text":"Random Forest","textPreview":"Random Forest","textChars":13,"textLines":1,"bbox":[125,248,260,22]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":10,"text":"Nonlinear ensemble","textPreview":"Nonlinear ensemble","textChars":18,"textLines":1,"bbox":[390,250,280,20]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":10,"text":"Benchmark comparison","textPreview":"Benchmark comparison","textChars":20,"textLines":1,"bbox":[700,250,190,20]}
+{"kind":"shape","id":"sh/47y1kre1","slide":10,"bbox":[30,360,900,0]}
+{"kind":"shape","id":"sh/tsvu9kni","slide":10,"bbox":[50,315,45,32]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":10,"text":"#2","textPreview":"#2","textChars":2,"textLines":1,"bbox":[58,322,30,12]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":10,"text":"XGBoost","textPreview":"XGBoost","textChars":7,"textLines":1,"bbox":[125,313,260,22]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":10,"text":"Sequential boosting","textPreview":"Sequential boosting","textChars":19,"textLines":1,"bbox":[390,315,280,20]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":10,"text":"Benchmark comparison","textPreview":"Benchmark comparison","textChars":20,"textLines":1,"bbox":[700,315,190,20]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":10,"bbox":[30,425,900,0]}
+{"kind":"shape","id":"sh/bat47y1k","slide":10,"bbox":[50,380,45,32]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":10,"text":"#1","textPreview":"#1","textChars":2,"textLines":1,"bbox":[58,387,30,12]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":10,"text":"SWRF","textPreview":"SWRF","textChars":4,"textLines":1,"bbox":[125,378,260,22]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":10,"text":"Best overall performer","textPreview":"Best overall performer","textChars":22,"textLines":1,"bbox":[390,380,280,20]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":10,"text":"Selected as predictive engine","textPreview":"Selected as predictive engine","textChars":29,"textLines":1,"bbox":[700,380,190,20]}
+{"kind":"shape","id":"sh/54zidony","slide":10,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":10,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/3q2duz","slide":10,"text":""}
+{"kind":"slide","id":"sl/y2jegj","slide":11,"title":"Spatially Weighted Random Forest produces the strongest overall result","textShapes":10}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":11,"text":"Spatially Weighted Random Forest produces the strongest overall result","textPreview":"Spatially Weighted Random Forest produces the strongest overall result","textChars":70,"textLines":1,"bbox":[30,30,620,65]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":11,"bbox":[790,79.12,59.04,10.8]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":11,"bbox":[837.52,46,10.8,44.64]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":11,"bbox":[815.92,56.08,33.12,33.12]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":11,"bbox":[30,103,900,0]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":11,"bbox":[486,332,444,150]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":11,"text":"The paper reports a clear performance progression: traditional GIS is weakest, machine learning improves accuracy, and SWRF ranks first overall.","textPreview":"The paper reports a clear performance progression: traditional GIS is weakest, machine learning improves accuracy, and SWRF ranks first o...","textChars":144,"textLines":1,"bbox":[505,354,385,75]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":11,"bbox":[30,204,422,0]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":11,"text":"Performance","textPreview":"Performance","textChars":11,"textLines":1,"bbox":[30,156,92,24]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":11,"text":"Models were evaluated with RMSE, MAE, R², and a composite rank.","textPreview":"Models were evaluated with RMSE, MAE, R², and a composite rank.","textChars":63,"textLines":1,"bbox":[135,156,292,45]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":11,"bbox":[30,279,422,0]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":11,"text":"Interpretation","textPreview":"Interpretation","textChars":14,"textLines":1,"bbox":[30,231,92,24]}
+{"kind":"textbox","id":"sh/cvixczed","slide":11,"text":"SWRF benefits from nonlinear learning plus spatial context.","textPreview":"SWRF benefits from nonlinear learning plus spatial context.","textChars":59,"textLines":1,"bbox":[135,231,292,45]}
+{"kind":"shape","id":"sh/nyd0z610","slide":11,"bbox":[30,354,422,0]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":11,"text":"Practical validation","textPreview":"Practical validation","textChars":20,"textLines":1,"bbox":[30,306,92,24]}
+{"kind":"textbox","id":"sh/54zidony","slide":11,"text":"High scores align with established commercial activity centers.","textPreview":"High scores align with established commercial activity centers.","textChars":63,"textLines":1,"bbox":[135,306,292,45]}
+{"kind":"shape","id":"sh/cj6tovah","slide":11,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/judg7ads","slide":11,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/y2jegj","slide":11,"text":""}
+{"kind":"slide","id":"sl/jh3kw6","slide":12,"title":"Geographic validation checks whether the predictions make planning sense","textShapes":12}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":12,"text":"Geographic validation checks whether the predictions make planning sense","textPreview":"Geographic validation checks whether the predictions make planning sense","textChars":72,"textLines":1,"bbox":[30,30,610,52]}
+{"kind":"shape","id":"sh/adsji5sn","slide":12,"bbox":[30,118,900,0]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":12,"bbox":[84,168,38,38]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[91,178,24,14]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":12,"text":"Known centers score high","textPreview":"Known centers score high","textChars":24,"textLines":1,"bbox":[36,235,142,38]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":12,"text":"Brickell, Downtown Miami, Las Olas, Boca Raton, and West Palm Beach appear as strong suitability areas.","textPreview":"Brickell, Downtown Miami, Las Olas, Boca Raton, and West Palm Beach appear as strong suitability areas.","textChars":103,"textLines":1,"bbox":[6,292,202,82]}
+{"kind":"shape","id":"sh/3m94fu18","slide":12,"bbox":[370,168,38,38]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[377,178,24,14]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":12,"text":"Weak candidates are filtered","textPreview":"Weak candidates are filtered","textChars":28,"textLines":1,"bbox":[322,235,142,38]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":12,"text":"Sparse wetlands and conservation lands are removed or receive lower suitability scores.","textPreview":"Sparse wetlands and conservation lands are removed or receive lower suitability scores.","textChars":87,"textLines":1,"bbox":[292,292,202,82]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":12,"bbox":[656,168,38,38]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[663,178,24,14]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":12,"text":"The map becomes usable evidence","textPreview":"The map becomes usable evidence","textChars":31,"textLines":1,"bbox":[608,235,142,38]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":12,"text":"The final surface supports spatial comparison instead of a single black-box score.","textPreview":"The final surface supports spatial comparison instead of a single black-box score.","textChars":82,"textLines":1,"bbox":[578,292,202,82]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":12,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":12,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/jh3kw6","slide":12,"text":""}
+{"kind":"slide","id":"sl/hdkcql","slide":13,"title":"SHAP turns the selected model into an explainable decision tool","textShapes":10}
+{"kind":"textbox","id":"sh/neloj2t8","slide":13,"text":"SHAP turns the selected model into an explainable decision tool","textPreview":"SHAP turns the selected model into an explainable decision tool","textChars":63,"textLines":1,"bbox":[30,30,620,65]}
+{"kind":"shape","id":"sh/czed8v6p","slide":13,"bbox":[790,79.12,59.04,10.8]}
+{"kind":"shape","id":"sh/5kb6xkf6","slide":13,"bbox":[837.52,46,10.8,44.64]}
+{"kind":"shape","id":"sh/u54zidon","slide":13,"bbox":[815.92,56.08,33.12,33.12]}
+{"kind":"shape","id":"sh/nqxs72x4","slide":13,"bbox":[30,103,900,0]}
+{"kind":"shape","id":"sh/cbulwval","slide":13,"bbox":[486,332,444,150]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":13,"text":"Each census tract receives the three strongest positive and three strongest negative drivers behind its predicted suitability score.","textPreview":"Each census tract receives the three strongest positive and three strongest negative drivers behind its predicted suitability score.","textChars":132,"textLines":1,"bbox":[505,354,385,75]}
+{"kind":"shape","id":"sh/y90je9cv","slide":13,"bbox":[30,204,422,0]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":13,"text":"Positive drivers","textPreview":"Positive drivers","textChars":16,"textLines":1,"bbox":[30,156,92,24]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":13,"text":"Commercial POI Score, Commercial Land Use Index, Employment Density, and Road Accessibility often raise scores.","textPreview":"Commercial POI Score, Commercial Land Use Index, Employment Density, and Road Accessibility often raise scores.","textChars":111,"textLines":1,"bbox":[135,156,292,45]}
+{"kind":"shape","id":"sh/eloj2t83","slide":13,"bbox":[30,279,422,0]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":13,"text":"Negative drivers","textPreview":"Negative drivers","textChars":16,"textLines":1,"bbox":[30,231,92,24]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":13,"text":"Low access, weak commercial intensity, or limited market demand can lower suitability.","textPreview":"Low access, weak commercial intensity, or limited market demand can lower suitability.","textChars":86,"textLines":1,"bbox":[135,231,292,45]}
+{"kind":"shape","id":"sh/7u54zido","slide":13,"bbox":[30,354,422,0]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":13,"text":"Decision value","textPreview":"Decision value","textChars":14,"textLines":1,"bbox":[30,306,92,24]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":13,"text":"Users can see why a tract scored well before advancing it for deeper due diligence.","textPreview":"Users can see why a tract scored well before advancing it for deeper due diligence.","textChars":83,"textLines":1,"bbox":[135,306,292,45]}
+{"kind":"shape","id":"sh/wfyxobm5","slide":13,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":13,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/hdkcql","slide":13,"text":""}
+{"kind":"slide","id":"sl/6zw3we","slide":14,"title":"The Prospex CRE web app makes the model operational","textShapes":10}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":14,"text":"The Prospex CRE web app makes the model operational","textPreview":"The Prospex CRE web app makes the model operational","textChars":51,"textLines":1,"bbox":[30,30,620,65]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":14,"bbox":[790,79.12,59.04,10.8]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":14,"bbox":[837.52,46,10.8,44.64]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":14,"bbox":[815.92,56.08,33.12,33.12]}
+{"kind":"shape","id":"sh/gvy90je9","slide":14,"bbox":[30,103,900,0]}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":14,"bbox":[486,332,444,150]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":14,"text":"React, TypeScript, Vite, and Leaflet turn the GeoJSON outputs into an interactive commercial development intelligence platform.","textPreview":"React, TypeScript, Vite, and Leaflet turn the GeoJSON outputs into an interactive commercial development intelligence platform.","textChars":127,"textLines":1,"bbox":[505,354,385,75]}
+{"kind":"shape","id":"sh/9knih4by","slide":14,"bbox":[30,204,422,0]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":14,"text":"Map","textPreview":"Map","textChars":3,"textLines":1,"bbox":[30,156,92,24]}
+{"kind":"textbox","id":"sh/ulwval87","slide":14,"text":"Users hover or select census tracts to inspect percentile-normalized suitability scores.","textPreview":"Users hover or select census tracts to inspect percentile-normalized suitability scores.","textChars":88,"textLines":1,"bbox":[135,156,292,45]}
+{"kind":"shape","id":"sh/j6tovaho","slide":14,"bbox":[30,279,422,0]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":14,"text":"Comparison","textPreview":"Comparison","textChars":10,"textLines":1,"bbox":[30,231,92,24]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":14,"text":"The app shows the ML score, GIS baseline, recent construction signal, and county-ranked top tracts.","textPreview":"The app shows the ML score, GIS baseline, recent construction signal, and county-ranked top tracts.","textChars":99,"textLines":1,"bbox":[135,231,292,45]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":14,"bbox":[30,354,422,0]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":14,"text":"Explanation","textPreview":"Explanation","textChars":11,"textLines":1,"bbox":[30,306,92,24]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":14,"text":"SHAP-style drivers are surfaced in the tract information card.","textPreview":"SHAP-style drivers are surfaced in the tract information card.","textChars":62,"textLines":1,"bbox":[135,306,292,45]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":14,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":14,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/6zw3we","slide":14,"text":""}
+{"kind":"slide","id":"sl/dqvina","slide":15,"title":"The findings reposition GIS as the spatial foundation for machine learning","textShapes":12}
+{"kind":"textbox","id":"sh/vahoza1g","slide":15,"text":"The findings reposition GIS as the spatial foundation for machine learning","textPreview":"The findings reposition GIS as the spatial foundation for machine learning","textChars":74,"textLines":1,"bbox":[30,30,610,52]}
+{"kind":"shape","id":"sh/ovahoza1","slide":15,"bbox":[30,118,900,0]}
+{"kind":"shape","id":"sh/dg7adsji","slide":15,"bbox":[84,168,38,38]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":15,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[91,178,24,14]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":15,"text":"GIS remains essential","textPreview":"GIS remains essential","textChars":21,"textLines":1,"bbox":[36,235,142,38]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":15,"text":"It organizes, joins, preprocesses, and visualizes geographic information.","textPreview":"It organizes, joins, preprocesses, and visualizes geographic information.","textChars":73,"textLines":1,"bbox":[6,292,202,82]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":15,"bbox":[370,168,38,38]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":15,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[377,178,24,14]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":15,"text":"ML improves the modeling layer","textPreview":"ML improves the modeling layer","textChars":30,"textLines":1,"bbox":[322,235,142,38]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":15,"text":"It learns nonlinear relationships instead of relying on subjective weights.","textPreview":"It learns nonlinear relationships instead of relying on subjective weights.","textChars":75,"textLines":1,"bbox":[292,292,202,82]}
+{"kind":"shape","id":"sh/y90je9cv","slide":15,"bbox":[656,168,38,38]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":15,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[663,178,24,14]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":15,"text":"XAI supports adoption","textPreview":"XAI supports adoption","textChars":21,"textLines":1,"bbox":[608,235,142,38]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":15,"text":"SHAP helps planners and developers understand why locations are recommended.","textPreview":"SHAP helps planners and developers understand why locations are recommended.","textChars":76,"textLines":1,"bbox":[578,292,202,82]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":15,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":15,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/dqvina","slide":15,"text":""}
+{"kind":"slide","id":"sl/ar6q7h","slide":16,"title":"The main constraints define where the framework should evolve","textShapes":18}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":16,"text":"The main constraints define where the framework should evolve","textPreview":"The main constraints define where the framework should evolve","textChars":61,"textLines":1,"bbox":[30,30,760,42]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":16,"bbox":[30,112,900,0]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":16,"text":"Limitation","textPreview":"Limitation","textChars":10,"textLines":1,"bbox":[38,127,239,22]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":16,"text":"Current scope","textPreview":"Current scope","textChars":13,"textLines":1,"bbox":[293,127,289,22]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":16,"text":"Implication","textPreview":"Implication","textChars":11,"textLines":1,"bbox":[598,127,324,22]}
+{"kind":"shape","id":"sh/at47y1kr","slide":16,"bbox":[30,160,900,0]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":16,"text":"Geography","textPreview":"Geography","textChars":9,"textLines":1,"bbox":[38,173,237,32]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":16,"text":"Validated only in South Florida","textPreview":"Validated only in South Florida","textChars":31,"textLines":1,"bbox":[293,173,287,32]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":16,"text":"Test transferability in other metros","textPreview":"Test transferability in other metros","textChars":36,"textLines":1,"bbox":[598,173,322,32]}
+{"kind":"shape","id":"sh/9knih4by","slide":16,"bbox":[30,214,900,0]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":16,"text":"Data","textPreview":"Data","textChars":4,"textLines":1,"bbox":[38,227,237,32]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":16,"text":"Public data only","textPreview":"Public data only","textChars":16,"textLines":1,"bbox":[293,227,287,32]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":16,"text":"Proprietary market data may add signal","textPreview":"Proprietary market data may add signal","textChars":38,"textLines":1,"bbox":[598,227,322,32]}
+{"kind":"shape","id":"sh/9w3m94fu","slide":16,"bbox":[30,268,900,0]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":16,"text":"Time","textPreview":"Time","textChars":4,"textLines":1,"bbox":[38,281,237,32]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":16,"text":"Static suitability snapshot","textPreview":"Static suitability snapshot","textChars":27,"textLines":1,"bbox":[293,281,287,32]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":16,"text":"Retrain and extend toward forecasting","textPreview":"Retrain and extend toward forecasting","textChars":37,"textLines":1,"bbox":[598,281,322,32]}
+{"kind":"shape","id":"sh/94fu18jq","slide":16,"bbox":[30,322,900,0]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":16,"text":"Decision role","textPreview":"Decision role","textChars":13,"textLines":1,"bbox":[38,335,237,32]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":16,"text":"Decision support tool","textPreview":"Decision support tool","textChars":21,"textLines":1,"bbox":[293,335,287,32]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":16,"text":"Does not replace professional judgment","textPreview":"Does not replace professional judgment","textChars":38,"textLines":1,"bbox":[598,335,322,32]}
+{"kind":"shape","id":"sh/ed8bat47","slide":16,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/7u54zido","slide":16,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/ar6q7h","slide":16,"text":""}
+{"kind":"slide","id":"sl/3fahoe","slide":17,"title":"Future work can turn the prototype into a broader decision-support platform","textShapes":10}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":17,"text":"Future work can turn the prototype into a broader decision-support platform","textPreview":"Future work can turn the prototype into a broader decision-support platform","textChars":75,"textLines":1,"bbox":[30,30,620,65]}
+{"kind":"shape","id":"sh/t83itgfm","slide":17,"bbox":[790,79.12,59.04,10.8]}
+{"kind":"shape","id":"sh/4nap4r65","slide":17,"bbox":[837.52,46,10.8,44.64]}
+{"kind":"shape","id":"sh/bq1oryts","slide":17,"bbox":[815.92,56.08,33.12,33.12]}
+{"kind":"shape","id":"sh/m58z25kb","slide":17,"bbox":[30,103,900,0]}
+{"kind":"shape","id":"sh/twra5gbq","slide":17,"bbox":[486,332,444,150]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":17,"text":"The strongest next step is to test transferability while adding richer time-aware and scenario-based workflows.","textPreview":"The strongest next step is to test transferability while adding richer time-aware and scenario-based workflows.","textChars":111,"textLines":1,"bbox":[505,354,385,75]}
+{"kind":"shape","id":"sh/bm58z25k","slide":17,"bbox":[30,204,422,0]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":17,"text":"Expand","textPreview":"Expand","textChars":6,"textLines":1,"bbox":[30,156,92,24]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":17,"text":"Apply the framework to Atlanta, Dallas, Charlotte, Phoenix, Seattle, Chicago, and other metros.","textPreview":"Apply the framework to Atlanta, Dallas, Charlotte, Phoenix, Seattle, Chicago, and other metros.","textChars":95,"textLines":1,"bbox":[135,156,292,45]}
+{"kind":"shape","id":"sh/1032lszq","slide":17,"bbox":[30,279,422,0]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":17,"text":"Enrich","textPreview":"Enrich","textChars":6,"textLines":1,"bbox":[30,231,92,24]}
+{"kind":"textbox","id":"sh/judg7ads","slide":17,"text":"Evaluate lease rates, occupancy, mobility, permits, zoning, and parcel-level indicators.","textPreview":"Evaluate lease rates, occupancy, mobility, permits, zoning, and parcel-level indicators.","textChars":88,"textLines":1,"bbox":[135,231,292,45]}
+{"kind":"shape","id":"sh/c7u54zid","slide":17,"bbox":[30,354,422,0]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":17,"text":"Operationalize","textPreview":"Operationalize","textChars":14,"textLines":1,"bbox":[30,306,92,24]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":17,"text":"Add scenario analysis, reporting, saved searches, and recurring data updates.","textPreview":"Add scenario analysis, reporting, saved searches, and recurring data updates.","textChars":77,"textLines":1,"bbox":[135,306,292,45]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":17,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/cvixczed","slide":17,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/3fahoe","slide":17,"text":""}
+{"kind":"slide","id":"sl/bsvesl","slide":18,"title":"The conclusion is that ML augments GIS rather than replacing it","textShapes":12}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":18,"text":"The conclusion is that ML augments GIS rather than replacing it","textPreview":"The conclusion is that ML augments GIS rather than replacing it","textChars":63,"textLines":1,"bbox":[30,30,610,52]}
+{"kind":"shape","id":"sh/i5sneloj","slide":18,"bbox":[30,118,900,0]}
+{"kind":"shape","id":"sh/7qpg3ex0","slide":18,"bbox":[84,168,38,38]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":18,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[91,178,24,14]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":18,"text":"Controlled comparison","textPreview":"Controlled comparison","textChars":21,"textLines":1,"bbox":[36,235,142,38]}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":18,"text":"Every method used the same explanatory variables, so performance differences reflect modeling approach.","textPreview":"Every method used the same explanatory variables, so performance differences reflect modeling approach.","textChars":103,"textLines":1,"bbox":[6,292,202,82]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":18,"bbox":[370,168,38,38]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":18,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[377,178,24,14]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":18,"text":"Best model","textPreview":"Best model","textChars":10,"textLines":1,"bbox":[322,235,142,38]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":18,"text":"Spatially Weighted Random Forest achieved the strongest overall performance in the tournament.","textPreview":"Spatially Weighted Random Forest achieved the strongest overall performance in the tournament.","textChars":94,"textLines":1,"bbox":[292,292,202,82]}
+{"kind":"shape","id":"sh/83itgfml","slide":18,"bbox":[656,168,38,38]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":18,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[663,178,24,14]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":18,"text":"Usable output","textPreview":"Usable output","textChars":13,"textLines":1,"bbox":[608,235,142,38]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":18,"text":"SHAP and the web app make the final predictions explainable and actionable.","textPreview":"SHAP and the web app make the final predictions explainable and actionable.","textChars":75,"textLines":1,"bbox":[578,292,202,82]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":18,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":18,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/bsvesl","slide":18,"text":""}
+{"kind":"slide","id":"sl/6cyckl","slide":19,"title":"Q&A","textShapes":5}
+{"kind":"textbox","id":"sh/epkzupwb","slide":19,"text":"Q&A","textPreview":"Q&A","textChars":3,"textLines":1,"bbox":[30,34,300,54]}
+{"kind":"shape","id":"sh/pg3ex0nu","slide":19,"bbox":[30,101,300,0]}
+{"kind":"textbox","id":"sh/wval87ed","slide":19,"text":"Any questions?","textPreview":"Any questions?","textChars":14,"textLines":1,"bbox":[30,128,260,24]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":19,"text":"Prospex CRE connects GIS, machine learning, explainable AI, and interactive mapping to support evidence-based commercial real estate site selection.","textPreview":"Prospex CRE connects GIS, machine learning, explainable AI, and interactive mapping to support evidence-based commercial real estate site...","textChars":148,"textLines":1,"bbox":[30,360,360,74]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":19,"bbox":[520,120,340,250]}
+{"kind":"shape","id":"sh/psfil0rq","slide":19,"bbox":[622,272.8,147.6,27]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":19,"bbox":[740.8,190,27,111.6]}
+{"kind":"shape","id":"sh/7u54zido","slide":19,"bbox":[686.8,215.2,82.8,82.8]}
+{"kind":"shape","id":"sh/ed8bat47","slide":19,"bbox":[30,500,900,0]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":19,"text":"Prospex CRE","textPreview":"Prospex CRE","textChars":11,"textLines":1,"bbox":[30,508,180,14]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[468,508,24,14]}
+{"kind":"notes","id":"nt/6cyckl","slide":19,"text":""}
